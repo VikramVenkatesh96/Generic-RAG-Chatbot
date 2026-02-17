@@ -1,0 +1,50 @@
+@echo off
+title FAQ Chatbot Demo
+
+echo ===============================
+echo Starting FAQ Chatbot Backend...
+echo ===============================
+
+REM Activate virtual environment
+call venv\Scripts\activate
+
+REM Start backend in new window
+start cmd /k "cd backend && uvicorn main:app --host 127.0.0.1 --port 8000"
+
+echo Waiting for server to start...
+timeout /t 5 >nul
+
+echo Opening frontend...
+
+start "" "%cd%\frontend\index.html"
+
+echo.
+echo Demo is running!
+echo Backend: http://127.0.0.1:8000
+echo.
+pause
+@echo off
+title FAQ Chatbot Demo
+
+echo ===============================
+echo Starting FAQ Chatbot Backend...
+echo ===============================
+
+REM Activate virtual environment
+call venv\Scripts\activate
+
+REM Start backend in new window
+start cmd /k "cd backend && uvicorn main:app --host 127.0.0.1 --port 8000"
+
+echo Waiting for server to start...
+timeout /t 5 >nul
+
+echo Opening frontend...
+
+start "" "%cd%\frontend\index.html"
+
+echo.
+echo Demo is running!
+echo Backend: http://127.0.0.1:8000
+echo.
+pause

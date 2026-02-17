@@ -1,0 +1,16 @@
+# Python
+Chatbot/
+__pycache__/
+*.pyc
+models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Model cache (optional)
+*.bin
+*.pt
